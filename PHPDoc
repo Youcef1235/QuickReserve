@@ -1,0 +1,10 @@
+/**
+ * Récupère les créneaux disponibles pour un service à une date donnée
+ *
+ * @param int $serviceId ID du service
+ * @param string $date Date au format Y-m-d
+ * @return array Liste des créneaux disponibles
+ */
+function getAvailableSlots($serviceId, $date) {
+    // Code de la fonction...
+}
