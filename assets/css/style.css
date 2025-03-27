@@ -1,0 +1,202 @@
+/* Styles personnalisés pour QuickReserve */
+
+/* Variables */
+:root {
+  --primary-color: #4e73df;
+  --secondary-color: #1cc88a;
+  --danger-color: #e74a3b;
+  --warning-color: #f6c23e;
+  --info-color: #36b9cc;
+  --dark-color: #5a5c69;
+  --light-color: #f8f9fc;
+}
+
+/* Général */
+body {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f8f9fc;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Cartes */
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1rem 1.25rem;
+}
+
+.service-card {
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+/* Boutons */
+.btn {
+  border-radius: 0.25rem;
+  padding: 0.375rem 1rem;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #2e59d9;
+  border-color: #2653d4;
+}
+
+.btn-success {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-success:hover {
+  background-color: #17a673;
+  border-color: #169b6b;
+}
+
+/* Navigation */
+.navbar {
+  padding: 1rem 0;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+}
+
+/* Formulaires */
+.form-control {
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+}
+
+/* Calendrier */
+.fc-day-today {
+  background-color: rgba(78, 115, 223, 0.1) !important;
+}
+
+.fc-event {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Badges */
+.badge {
+  font-weight: 600;
+  padding: 0.35em 0.65em;
+}
+
+/* Étoiles pour les avis */
+.bi-star-fill,
+.bi-star {
+  color: #f6c23e;
+}
+
+/* Page d'accueil */
+.hero-section {
+  background-color: #4e73df;
+  color: white;
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Tableaux */
+.table {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.table thead th {
+  background-color: #f8f9fc;
+  border-bottom: 2px solid #e3e6f0;
+}
+
+/* Alertes */
+.alert {
+  border-radius: 0.5rem;
+  border: none;
+}
+
+/* Pagination */
+.page-item.active .page-link {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.page-link {
+  color: var(--primary-color);
+}
+
+.page-link:hover {
+  color: #2e59d9;
+}
+
